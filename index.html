@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="ASV Tech Solutions builds custom software, web and mobile applications, APIs and cloud backends for startups and growing businesses." />
+<meta name="theme-color" content="#0a0b12" />
+<title>ASV Tech Solutions — Custom Software & App Development</title>
+
+<meta property="og:title" content="ASV Tech Solutions" />
+<meta property="og:description" content="Custom software, web & mobile app development." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="ASV Tech Solutions home">
+      <span class="brand-mark">ASV</span>
+      <span class="brand-text">Tech Solutions</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" hidden>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+    <a href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Custom software studio</p>
+        <h1>We design and build<br /><span class="grad-text">software that ships.</span></h1>
+        <p class="lede">
+          ASV Tech Solutions is a product engineering team. We turn ideas into
+          fast, reliable web and mobile applications — from first prototype to
+          production scale.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Start a project</a>
+          <a href="#work" class="btn btn-ghost">See our work</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>40+</strong><span>Products shipped</span></li>
+          <li><strong>6 yrs</strong><span>Avg. team experience</span></li>
+          <li><strong>98%</strong><span>Client retention</span></li>
+        </ul>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="code-card">
+          <div class="code-card-bar">
+            <span></span><span></span><span></span>
+            <em>deploy.sh</em>
+          </div>
+          <pre><code><span class="c-key">const</span> <span class="c-var">app</span> = <span class="c-fn">createApp</span>({
+  name: <span class="c-str">'asv-platform'</span>,
+  stack: [<span class="c-str">'ts'</span>, <span class="c-str">'react'</span>, <span class="c-str">'node'</span>],
+  ci: <span class="c-key">true</span>,
+});
+
+<span class="c-var">app</span>.<span class="c-fn">deploy</span>(<span class="c-str">'production'</span>)
+  .<span class="c-fn">then</span>(() => <span class="c-fn">log</span>(<span class="c-str">'✓ live in 42s'</span>));</code></pre>
+        </div>
+        <div class="float-chip chip-a">CI/CD passing</div>
+        <div class="float-chip chip-b">99.9% uptime</div>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span>
+        <span>React Native</span><span>Flutter</span><span>PostgreSQL</span><span>AWS</span>
+        <span>Docker</span><span>GraphQL</span><span>Python</span><span>Kubernetes</span>
+        <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span>
+        <span>React Native</span><span>Flutter</span><span>PostgreSQL</span><span>AWS</span>
+        <span>Docker</span><span>GraphQL</span><span>Python</span><span>Kubernetes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2>Full-cycle product engineering</h2>
+        <p class="section-sub">
+          One team for strategy, design and engineering — so nothing gets lost
+          between the brief and the build.
+        </p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-icon">&lt;/&gt;</div>
+          <h3>Web application development</h3>
+          <p>
+            Dashboards, portals and SaaS platforms built with React, Next.js and
+            TypeScript — accessible, responsive and quick.
+          </p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">▤</div>
+          <h3>Mobile app development</h3>
+          <p>
+            Cross-platform iOS and Android apps with React Native and Flutter,
+            plus native modules when performance demands it.
+          </p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">⚙</div>
+          <h3>APIs &amp; cloud backends</h3>
+          <p>
+            REST and GraphQL services, event-driven systems and cloud
+            infrastructure on AWS with observability baked in.
+          </p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">◐</div>
+          <h3>MVP &amp; product discovery</h3>
+          <p>
+            Validate an idea in weeks. We scope the smallest version that proves
+            the concept, then iterate on real feedback.
+          </p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">✦</div>
+          <h3>UI / UX design</h3>
+          <p>
+            Research, wireframes, prototypes and a design system your engineers
+            can actually build from.
+          </p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">↻</div>
+          <h3>Modernization &amp; support</h3>
+          <p>
+            Refactor legacy code, add tests and CI, and keep things running with
+            ongoing maintenance retainers.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section section-alt" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects we're proud of</h2>
+        <p class="section-sub">Representative engagements. Names withheld on request.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-item reveal">
+          <div class="work-thumb thumb-1"><span>FinOps SaaS</span></div>
+          <div class="work-body">
+            <h3>Cloud cost analytics platform</h3>
+            <p>Multi-tenant dashboard processing 5M+ billing records daily. Cut report generation from minutes to seconds.</p>
+            <ul class="tags"><li>Next.js</li><li>Node</li><li>PostgreSQL</li><li>AWS</li></ul>
+          </div>
+        </article>
+        <article class="work-item reveal">
+          <div class="work-thumb thumb-2"><span>HealthTech</span></div>
+          <div class="work-body">
+            <h3>Patient engagement mobile app</h3>
+            <p>HIPAA-conscious React Native app with offline sync, appointment booking and secure messaging. 4.8★ on stores.</p>
+            <ul class="tags"><li>React Native</li><li>GraphQL</li><li>Firebase</li></ul>
+          </div>
+        </article>
+        <article class="work-item reveal">
+          <div class="work-thumb thumb-3"><span>Logistics</span></div>
+          <div class="work-body">
+            <h3>Fleet tracking &amp; routing engine</h3>
+            <p>Real-time GPS ingestion and route optimization serving 1,200 vehicles with live ETAs and geofencing alerts.</p>
+            <ul class="tags"><li>Python</li><li>Kafka</li><li>Kubernetes</li></ul>
+          </div>
+        </article>
+        <article class="work-item reveal">
+          <div class="work-thumb thumb-4"><span>E-commerce</span></div>
+          <div class="work-body">
+            <h3>Headless storefront rebuild</h3>
+            <p>Replatformed a slow monolith to a headless stack. Largest Contentful Paint down 61%, conversion up 18%.</p>
+            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Stripe</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">How we work</p>
+        <h2>A process built for momentum</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal">
+          <span class="step-no">01</span>
+          <h3>Discover</h3>
+          <p>We map goals, users and constraints, then agree on what success looks like and what we're not building.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-no">02</span>
+          <h3>Design</h3>
+          <p>Flows, wireframes and a clickable prototype. You see and feel the product before a line of production code.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-no">03</span>
+          <h3>Build</h3>
+          <p>Two-week sprints, demos every Friday, and a staging URL from day one. No black boxes.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-no">04</span>
+          <h3>Launch &amp; scale</h3>
+          <p>Automated deploys, monitoring and a support plan so the product keeps improving after go-live.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="eyebrow">About us</p>
+        <h2>A small senior team, deliberately</h2>
+        <p class="section-sub">
+          ASV Tech Solutions is a compact engineering studio. Every project is
+          run by people who have shipped and maintained real products — not
+          handed to juniors after the sale.
+        </p>
+        <p class="section-sub">
+          We keep teams small so communication stays direct, decisions stay
+          fast, and quality stays high. When you need more hands, we scale up
+          with people we've worked with for years.
+        </p>
+        <a href="#contact" class="btn btn-primary">Work with us</a>
+      </div>
+      <ul class="value-list reveal">
+        <li><strong>Own the outcome.</strong> We care whether it works in production, not just whether it was delivered.</li>
+        <li><strong>Write it down.</strong> Decisions, trade-offs and architecture live in docs you keep.</li>
+        <li><strong>Ship small, ship often.</strong> Frequent releases beat big-bang launches every time.</li>
+        <li><strong>No lock-in.</strong> Standard tools, clean handover, your repos and your cloud.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Tell us what you're building</h2>
+          <p class="section-sub">
+            Send a short brief and we'll reply within two business days with
+            next steps — or a straight answer on whether we're the right fit.
+          </p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:hello@asvtechsolutions.com">hello@asvtechsolutions.com</a></li>
+            <li><span>Phone</span><a href="tel:+910000000000">+91 00000 00000</a></li>
+            <li><span>Location</span>Pune, India — working with clients worldwide</li>
+          </ul>
+        </div>
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="company">Company <em>(optional)</em></label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="message">Project brief</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="#top" class="brand">
+        <span class="brand-mark">ASV</span>
+        <span class="brand-text">Tech Solutions</span>
+      </a>
+      <p class="footer-tag">Custom software, web &amp; mobile app development.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <span class="footer-sep" aria-hidden="true">&amp;</span>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <p class="copyright">© <span id="year"></span> ASV Tech Solutions. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

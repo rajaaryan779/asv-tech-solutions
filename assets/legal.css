@@ -58,7 +58,7 @@
   color: var(--text-dim);
   transition: background 0.15s ease, color 0.15s ease;
 }
-.legal-toc a:hover { background: rgba(255, 255, 255, 0.05); color: var(--text); }
+.legal-toc a:hover { background: var(--bg-alt); color: var(--text); }
 
 /* body */
 .legal-body { max-width: 720px; }

@@ -56,21 +56,45 @@
     });
   }
 
-  /* ---- expandable work item (case study) ---- */
-  var workToggle = document.querySelector(".work-toggle");
-  if (workToggle) {
-    var workPanel = document.getElementById(
-      workToggle.getAttribute("aria-controls")
-    );
-    workToggle.addEventListener("click", function () {
-      var open = workToggle.getAttribute("aria-expanded") === "true";
-      workToggle.setAttribute("aria-expanded", String(!open));
-      workPanel.hidden = open;
-      workToggle.querySelector(".work-more").firstChild.textContent = open
-        ? "View case study "
-        : "Hide case study ";
+  /* ---- case study modal ---- */
+  var openBtns = document.querySelectorAll("[data-modal]");
+  var activeModal = null;
+  var lastFocused = null;
+
+  var closeModal = function () {
+    if (!activeModal) return;
+    activeModal.hidden = true;
+    document.body.classList.remove("modal-open");
+    if (lastFocused) lastFocused.focus();
+    activeModal = null;
+  };
+
+  var openModal = function (id) {
+    var modal = document.getElementById(id);
+    if (!modal) return;
+    lastFocused = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    activeModal = modal;
+    var close = modal.querySelector(".modal-close");
+    if (close) close.focus();
+  };
+
+  openBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      openModal(btn.getAttribute("data-modal"));
     });
-  }
+  });
+
+  document.querySelectorAll(".modal").forEach(function (modal) {
+    modal.querySelectorAll("[data-close]").forEach(function (el) {
+      el.addEventListener("click", closeModal);
+    });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeModal();
+  });
 
   /* ---- contact form (front-end only, no backend wired) ---- */
   var form = document.querySelector(".contact-form");

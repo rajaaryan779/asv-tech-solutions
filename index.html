@@ -177,59 +177,15 @@
         <p class="section-sub">Representative engagements. Names withheld on request.</p>
       </div>
       <div class="work-grid">
-        <article class="work-item work-item--expandable reveal" id="ai-prashasan">
-          <button class="work-toggle" aria-expanded="false" aria-controls="ai-prashasan-panel">
-            <div class="work-thumb thumb-app"><span>Ai प्रशासन</span></div>
-            <div class="work-body">
-              <h3>Ai प्रशासन — Maharashtra employee guide</h3>
-              <p>Marathi-language Android app: 20+ salary &amp; service-rule calculators, a searchable Government Resolution directory and an in-app AI assistant. Calculations auto-save to the cloud and export to Excel.</p>
-              <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Firebase</li><li>RAG AI</li></ul>
-              <span class="work-more">View case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-            </div>
-          </button>
-          <div class="work-panel" id="ai-prashasan-panel" hidden>
-            <div class="casestudy-grid">
-              <div class="casestudy-copy">
-                <span class="app-badge">
-                  <img src="assets/projects/ai-prashasan/icon.png" alt="Ai प्रशासन app icon" />
-                  <b>Ai&nbsp;प्रशासन</b>
-                  <span>Android · Marathi</span>
-                </span>
-                <h4>A pocket handbook for every Maharashtra government employee</h4>
-                <p>
-                  Ai प्रशासन is a Marathi-language mobile app built for Maharashtra
-                  government employees, bringing salary calculators, service rules and
-                  Government Resolutions together in one place.
-                </p>
-                <ul class="casestudy-features">
-                  <li><b>20+ tools</b> — DA, GPF, pension, gratuity and pay-fixation calculators</li>
-                  <li><b>GR directory</b> — a searchable index of Government Resolutions</li>
-                  <li><b>Rules, in plain language</b> — a guide to Maharashtra Civil Services rules</li>
-                  <li><b>Cloud auto-save &amp; Excel export</b> — every calculation is kept and shareable</li>
-                  <li><b>In-app AI assistant</b> — answers administrative questions on the spot</li>
-                  <li><b>Community help</b> — connects employees across departments for practical guidance</li>
-                </ul>
-                <a href="#contact" class="btn btn-primary">Build something like this</a>
-              </div>
-              <div class="casestudy-visual">
-                <div class="phone-stack">
-                  <div class="phone phone-1">
-                    <img src="assets/projects/ai-prashasan/login.png" alt="Ai प्रशासन login screen" loading="lazy"
-                         onerror="this.parentElement.innerHTML='&lt;div class=&quot;phone-fallback&quot;&gt;Login&lt;/div&gt;'" />
-                  </div>
-                  <div class="phone phone-2">
-                    <img src="assets/projects/ai-prashasan/dashboard.png" alt="Ai प्रशासन tools dashboard" loading="lazy"
-                         onerror="this.parentElement.innerHTML='&lt;div class=&quot;phone-fallback&quot;&gt;Useful Tools&lt;/div&gt;'" />
-                  </div>
-                  <div class="phone phone-3">
-                    <img src="assets/projects/ai-prashasan/ai-assistant.png" alt="Ai प्रशासन AI assistant" loading="lazy"
-                         onerror="this.parentElement.innerHTML='&lt;div class=&quot;phone-fallback&quot;&gt;AI Assistant&lt;/div&gt;'" />
-                  </div>
-                </div>
-              </div>
-            </div>
+        <button class="work-item work-item--clickable reveal" data-modal="modal-ai-prashasan" type="button">
+          <div class="work-thumb thumb-app"><span>Ai प्रशासन</span></div>
+          <div class="work-body">
+            <h3>Ai प्रशासन — Maharashtra employee guide</h3>
+            <p>Marathi-language Android app: 20+ salary &amp; service-rule calculators, a searchable Government Resolution directory and an in-app AI assistant. Calculations auto-save to the cloud and export to Excel.</p>
+            <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Firebase</li><li>RAG AI</li></ul>
+            <span class="work-more">View case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
           </div>
-        </article>
+        </button>
         <article class="work-item reveal">
           <div class="work-thumb thumb-1"><span>FinOps SaaS</span></div>
           <div class="work-body">
@@ -366,6 +322,58 @@
     </div>
   </section>
 </main>
+
+<!-- ============ MODAL: Ai प्रशासन case study ============ -->
+<div class="modal" id="modal-ai-prashasan" hidden>
+  <div class="modal-overlay" data-close></div>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-ai-title">
+    <button class="modal-close" aria-label="Close" data-close>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="modal-body">
+      <div class="casestudy-grid">
+        <div class="casestudy-copy">
+          <span class="app-badge">
+            <img src="assets/projects/ai-prashasan/icon.png" alt="Ai प्रशासन app icon" />
+            <b>Ai&nbsp;प्रशासन</b>
+            <span>Android · Marathi</span>
+          </span>
+          <h3 id="modal-ai-title">A pocket handbook for every Maharashtra government employee</h3>
+          <p>
+            Ai प्रशासन is a Marathi-language mobile app built for Maharashtra
+            government employees, bringing salary calculators, service rules and
+            Government Resolutions together in one place.
+          </p>
+          <ul class="casestudy-features">
+            <li><b>20+ tools</b> — DA, GPF, pension, gratuity and pay-fixation calculators</li>
+            <li><b>GR directory</b> — a searchable index of Government Resolutions</li>
+            <li><b>Rules, in plain language</b> — a guide to Maharashtra Civil Services rules</li>
+            <li><b>Cloud auto-save &amp; Excel export</b> — every calculation is kept and shareable</li>
+            <li><b>In-app AI assistant</b> — answers administrative questions on the spot</li>
+            <li><b>Community help</b> — connects employees across departments for practical guidance</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-close>Build something like this</a>
+        </div>
+        <div class="casestudy-visual">
+          <div class="phone-stack">
+            <div class="phone phone-1">
+              <img src="assets/projects/ai-prashasan/login.png" alt="Ai प्रशासन login screen" loading="lazy"
+                   onerror="this.parentElement.innerHTML='&lt;div class=&quot;phone-fallback&quot;&gt;Login&lt;/div&gt;'" />
+            </div>
+            <div class="phone phone-2">
+              <img src="assets/projects/ai-prashasan/dashboard.png" alt="Ai प्रशासन tools dashboard" loading="lazy"
+                   onerror="this.parentElement.innerHTML='&lt;div class=&quot;phone-fallback&quot;&gt;Useful Tools&lt;/div&gt;'" />
+            </div>
+            <div class="phone phone-3">
+              <img src="assets/projects/ai-prashasan/ai-assistant.png" alt="Ai प्रशासन AI assistant" loading="lazy"
+                   onerror="this.parentElement.innerHTML='&lt;div class=&quot;phone-fallback&quot;&gt;AI Assistant&lt;/div&gt;'" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">

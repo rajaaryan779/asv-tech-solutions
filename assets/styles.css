@@ -1,5 +1,5 @@
 /* ===================================================================
-   ASV Tech Solutions — landing page styles
+   ASV Tech Solutions landing page styles
    Light theme, gradient accents. Plain CSS, no build step.
    =================================================================== */
 
@@ -264,6 +264,7 @@ body.modal-open { overflow: hidden; }
 .thumb-3 { background: linear-gradient(135deg, #0ea5c9, #10b981); }
 .thumb-4 { background: linear-gradient(135deg, #f59e0b, #ec4899); }
 .thumb-app { background: linear-gradient(135deg, #ff8a34, #f97316); }
+.thumb-police { background: linear-gradient(135deg, #1f6f3f, #d4a017); }
 .work-body { padding: 24px 26px 28px; }
 .work-body h3 { font-size: 1.16rem; margin-bottom: 10px; }
 .work-body p { color: var(--text-dim); font-size: 0.95rem; }
@@ -375,6 +376,10 @@ body.modal-open { overflow: hidden; }
 }
 .casestudy-copy .app-badge img {
   width: 34px; height: 34px; border-radius: 9px; object-fit: cover;
+}
+.app-badge-fallback {
+  width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center;
+  background: var(--grad); color: #fff; font-family: var(--font-head); font-weight: 700; font-size: 0.72rem;
 }
 .casestudy-copy .app-badge b { font-family: var(--font-head); font-size: 0.9rem; }
 .casestudy-copy .app-badge span { color: var(--text-faint); font-size: 0.8rem; }

@@ -1,4 +1,4 @@
-/* ASV Tech Solutions — interactions */
+/* ASV Tech Solutions interactions */
 (function () {
   "use strict";
 
@@ -111,12 +111,12 @@
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-        note.textContent = "That email doesn't look right — mind checking it?";
+        note.textContent = "That email doesn't look right. Mind checking it?";
         note.style.color = "#ff7aa8";
         return;
       }
       note.textContent =
-        "Thanks, " + name.value.trim().split(" ")[0] + " — this is a demo form. Connect it to email/Formspree to receive messages.";
+        "Thanks, " + name.value.trim().split(" ")[0] + ". This is a demo form. Connect it to email/Formspree to receive messages.";
       note.style.color = "";
       form.reset();
     });

@@ -56,6 +56,22 @@
     });
   }
 
+  /* ---- expandable work item (case study) ---- */
+  var workToggle = document.querySelector(".work-toggle");
+  if (workToggle) {
+    var workPanel = document.getElementById(
+      workToggle.getAttribute("aria-controls")
+    );
+    workToggle.addEventListener("click", function () {
+      var open = workToggle.getAttribute("aria-expanded") === "true";
+      workToggle.setAttribute("aria-expanded", String(!open));
+      workPanel.hidden = open;
+      workToggle.querySelector(".work-more").firstChild.textContent = open
+        ? "View case study "
+        : "Hide case study ";
+    });
+  }
+
   /* ---- contact form (front-end only, no backend wired) ---- */
   var form = document.querySelector(".contact-form");
   if (form) {

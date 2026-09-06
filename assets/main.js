@@ -96,7 +96,8 @@
     if (e.key === "Escape") closeModal();
   });
 
-  /* ---- contact form (front-end only, no backend wired) ---- */
+  /* ---- contact form (opens the visitor's email client) ---- */
+  var CONTACT_EMAIL = "asvtechsolutions005@gmail.com";
   var form = document.querySelector(".contact-form");
   if (form) {
     var note = form.querySelector(".form-note");
@@ -104,21 +105,31 @@
       e.preventDefault();
       var name = form.querySelector("#name");
       var email = form.querySelector("#email");
+      var company = form.querySelector("#company");
       var message = form.querySelector("#message");
       if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
         note.textContent = "Please fill in your name, email and a short brief.";
-        note.style.color = "#ff7aa8";
+        note.style.color = "#c81e5b";
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         note.textContent = "That email doesn't look right. Mind checking it?";
-        note.style.color = "#ff7aa8";
+        note.style.color = "#c81e5b";
         return;
       }
+      var subject = "Project enquiry from " + name.value.trim();
+      var body =
+        "Name: " + name.value.trim() + "\n" +
+        "Email: " + email.value.trim() + "\n" +
+        "Company: " + (company.value.trim() || "-") + "\n\n" +
+        "Project brief:\n" + message.value.trim() + "\n";
+      window.location.href =
+        "mailto:" + CONTACT_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
       note.textContent =
-        "Thanks, " + name.value.trim().split(" ")[0] + ". This is a demo form. Connect it to email/Formspree to receive messages.";
+        "Opening your email app. If nothing happens, email us directly at " + CONTACT_EMAIL + ".";
       note.style.color = "";
-      form.reset();
     });
   }
 })();
